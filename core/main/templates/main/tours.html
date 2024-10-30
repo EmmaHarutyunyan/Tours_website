@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Tours" %}{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <div class="side-gallery-wrapper">
+        <div class="side-gallery">
+            {% for tour in tours %}
+                <div class="side-gallery-item">
+                    <img src="{{ tour.image.url }}" alt="{{ tour.title }}" class="side-gallery-image">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="main-content">
+        <button class="scroll-btn scroll-up">&uarr;</button>
+        <button class="scroll-btn scroll-down">&darr;</button>
+        <h1 class="page-title">{% trans "Discover Our Exclusive Tours" %}</h1>
+        <div class="tours-container">
+            {% for tour in tours %}
+                <div class="tour-card">
+                    <div class="tour-image-wrapper">
+                        <img src="{{ tour.image.url }}" alt="{{ tour.title }}" class="tour-image">
+                    </div>
+                    <div class="tour-content">
+                        <h2 class="tour-title"><a href="{% url 'tour_detail' tour.id %}" class="tour-link">{{ tour.title }}</a></h2>
+                        <p class="tour-description">{{ tour.description }}</p>
+                        <div class="tour-details">
+                            <p class="tour-price">{% trans "Price" %}: ${{ tour.price }}</p>
+                            <p class="tour-duration">{% trans "Duration" %}: {{ tour.duration }}</p>
+                        </div>
+                        <a href="{% url 'tour_detail' tour.id %}" class="view-details-btn">{% trans "Explore More" %}</a>
+                    </div>
+                </div>
+            {% empty %}
+                <p class="no-tours-message">{% trans "Currently, there are no tours available. Please check back later!" %}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

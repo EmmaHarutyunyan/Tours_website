@@ -1,0 +1,230 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Welcome to Our Tour Site" %}{% endblock %}
+
+{% block content %}
+<div class="full-screen featured-video-section">
+    {% if featured_video %}
+    <div class="video-container">
+        <video controls autoplay muted loop>
+            <source src="{{ featured_video.video_file.url }}" type="video/mp4">
+            {% trans "Your browser does not support the video tag." %}
+        </video>
+        <div class="video-overlay">
+            <h2>{{ featured_video.title }}</h2>
+        </div>
+    </div>
+    {% else %}
+    <p>{% trans "No featured video available." %}</p>
+    {% endif %}
+</div>
+
+<div class="tour-list">
+    {% for tour in tours %}
+        <div class="tour-item">
+            <h1 class="tour-name">{{ tour.name }}</h1>
+
+            {% if tour.image %}
+                <img src="{{ tour.image.url }}" alt="{{ tour.title }}" class="tour-image">
+            {% else %}
+                <p>No image available</p>
+            {% endif %}
+            
+            <h2 class="tour-title">{{ tour.title }}</h2>
+
+            <p class="tour-description">{{ tour.description|truncatewords:20 }}</p>
+
+            <p class="tour-price"><strong>{% trans "Price:" %}</strong> ${{ tour.price }}</p>
+            
+            <a href="{% url 'tour_detail' tour.id %}" class="btn btn-primary">{% trans "Learn More" %}</a>
+        </div>
+    {% endfor %}
+</div>
+
+<div class="tour-details-section-container">
+    <div class="tour-details-section">
+        <h2>{% trans "Tour Details" %}</h2>
+        {% for tour in tours %}
+        <div class="tour-detail">
+            <h3>{{ tour.name }}</h3>
+            <p><strong>{% trans "Duration:" %}</strong> {{ tour.duration }}</p>
+            <p><strong>{% trans "Location:" %}</strong> {{ tour.location }}</p>
+            <a href="https://www.google.com/maps/search/?api=1&query={{ tour.location|urlencode }}" target="_blank" class="btn btn-primary">{% trans "View on Map" %}</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="video-sections">
+    <div class="video-section video-section-left">
+        {% if featured_video %}
+            <div class="video-item">
+                <video controls autoplay muted loop>
+                    <source src="{{ featured_video.video_file.url }}" type="video/mp4">
+                    {% trans "Your browser does not support the video tag." %}
+                </video>
+                {% if featured_video.caption %}
+                    <div class="video-caption">{{ featured_video.caption }}</div>
+                {% endif %}
+            </div>
+        {% else %}
+            <p>{% trans "No featured video available." %}</p>
+        {% endif %}
+    </div>
+
+    <div class="video-section video-section-right">
+        {% if other_videos %}
+            {% for video in other_videos %}
+                <div class="video-item">
+                    <video controls autoplay muted loop>
+                        <source src="{{ video.video_file.url }}" type="video/mp4">
+                        {% trans "Your browser does not support the video tag." %}
+                    </video>
+                    {% if video.caption %}
+                        <div class="video-caption">{{ video.caption }}</div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>{% trans "No videos available." %}</p>
+        {% endif %}
+    </div>
+</div>
+
+<div class="booking-section">
+    <h2>{% trans "Book a Tour" %}</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="tour">{% trans "Select Tour:" %}</label>
+            {{ form.tour }}
+        </div>
+        <div class="form-group">
+            <label for="start_date">{% trans "Select Start Date:" %}</label>
+            <input type="text" id="start_date" name="start_date" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="end_date">{% trans "Select End Date:" %}</label>
+            <input type="text" id="end_date" name="end_date" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="customer_name">{% trans "Name:" %}</label>
+            {{ form.customer_name }}
+        </div>
+        <div class="form-group">
+            <label for="customer_email">{% trans "Email:" %}</label>
+            {{ form.customer_email }}
+        </div>
+        <button type="submit" class="btn btn-primary">{% trans "Book" %}</button>
+    </form>
+    {% if form.non_field_errors %}
+    <div class="error">{{ form.non_field_errors }}</div>
+    {% endif %}
+</div>
+
+<div class="slideshow-container">
+    {% for image in slideshow_images %}
+        <div class="slide">
+            <img src="{{ image.image.url }}" alt="{{ image.caption }}" style="width:100%">
+            {% if image.caption %}
+                <div class="caption">{{ image.caption }}</div>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+
+<div class="tours-list">
+    <h2>{% trans "All Tours" %}</h2>
+    <ul>
+        {% for tour in tours %}
+        <li>
+            <div class="tour-item">
+                <a href="{% url 'tour_detail' tour.id %}" class="tour-name">{{ tour.name }}</a>
+                <span class="tour-price">{{ tour.price|floatformat:2 }} {% trans "USD" %}</span>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const bookedDates = JSON.parse('{{ booked_dates|escapejs }}');
+
+        const disableBookedDates = (inputElement) => {
+            inputElement.addEventListener('input', function () {
+                const date = new Date(this.value);
+                for (let i = 0; i < bookedDates.length; i++) {
+                    const [start_date, end_date] = bookedDates[i];
+                    const startDate = new Date(start_date);
+                    const endDate = new Date(end_date);
+
+                    if (date >= startDate && date <= endDate) {
+                        this.value = ''; 
+                        alert("{% trans 'Selected date is not available. Please choose a different date.' %}");
+                    }
+                }
+            });
+        };
+
+        const startDateInput = document.getElementById("start_date");
+        const endDateInput = document.getElementById("end_date");
+
+        disableBookedDates(startDateInput);
+        disableBookedDates(endDateInput);
+        
+        flatpickr("#start_date", {
+            dateFormat: "Y-m-d",
+            disable: bookedDates.flat(),
+            minDate: '{{ today }}',
+        });
+
+        flatpickr("#end_date", {
+            dateFormat: "Y-m-d",
+            disable: bookedDates.flat(),
+            minDate: '{{ today }}',
+        });
+        
+        let slideIndex = 0;
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000);
+        }
+
+        showSlides();
+
+        function plusSlides(n) {
+            slideIndex += n;
+            if (slideIndex > document.getElementsByClassName("slide").length) { slideIndex = 1 }
+            if (slideIndex < 1) { slideIndex = document.getElementsByClassName("slide").length }
+            showSlides();
+        }
+
+        document.querySelector(".prev").addEventListener("click", function () {
+            plusSlides(-1);
+        });
+
+        document.querySelector(".next").addEventListener("click", function () {
+            plusSlides(1);
+        });
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "ArrowLeft") {
+                plusSlides(-1);
+            } else if (event.key === "ArrowRight") {
+                plusSlides(1);
+            }
+        });
+    });
+</script>
+
+{% endblock %}

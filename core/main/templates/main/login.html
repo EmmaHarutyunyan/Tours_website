@@ -1,0 +1,69 @@
+{% load i18n %}
+{% load socialaccount %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Login Page" %}</title>
+    
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row align-items-center justify-content-center" style="height: 100vh">
+            <div class="col-lg-3"></div>
+
+            <div class="col-lg-6"> 
+                <div class="bg-white p-4 rounded-3 shadow text-center">
+                    <h2 class="text-dark">{% trans "Welcome!" %}</h2>
+
+                    <p class="text-dark mb-4">
+                        <a href="{% url 'index' %}" class="btn btn-link">{% trans "Back to Home" %}</a>
+                    </p>
+
+                    <a href="{% provider_login_url 'google' %}">
+                        <button class="btn btn-google">
+                            <img src="https://playtht-website-assets.s3.amazonaws.com/img/brand/google.svg" alt="{% trans 'Google logo' %}"/> {% trans "Sign up with Google" %}
+                        </button>
+                    </a>
+
+                    <div class="divider text-dark text-muted">{% trans "or use your username" %}</div>
+                    <form class="form" action="{% url 'login' %}" method="post">
+                        {% csrf_token %}
+                        <input type="text" class="form-control" name="username" id="username" placeholder="{% trans 'Username' %}" required>
+                        <input type="password" class="form-control" name="password" id="Password1" placeholder="{% trans 'Password' %}" required>
+
+                        <p class="text-dark mt-2">
+                            {% trans "New User?" %} <a href="{% url 'register' %}">{% trans "Signup" %}</a>
+                        </p>
+
+                        {% if error_login %}
+                            <div class="alert alert-danger">{{ error_login }}</div>
+                        {% endif %}
+                        {% if doesnot_exist %}
+                            <div class="alert alert-danger">{{ doesnot_exist }}</div>
+                        {% endif %}
+                        
+                        <button type="submit" class="btn btn-submit">{% trans "Submit" %}</button>
+                    </form>
+                    <div class="divider"></div>
+                    <p class="text-dark text-muted">
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

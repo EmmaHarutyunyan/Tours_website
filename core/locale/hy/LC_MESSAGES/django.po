@@ -1,0 +1,531 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-10 15:27+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\core\settings.py:210 .\main\templates\base.html:49
+msgid "Armenian"
+msgstr "Հայերեն"
+
+#: .\core\settings.py:211
+msgid "Russia"
+msgstr "Ռուսերեն"
+
+#: .\core\settings.py:212 .\main\templates\base.html:46
+msgid "English"
+msgstr "Անգլերեն"
+
+#: .\main\templates\base.html:15
+msgid "Tour Site"
+msgstr "Տուրեր"
+
+#: .\main\templates\base.html:22 .\main\templates\base.html:76
+msgid "Home"
+msgstr "Գլխավոր"
+
+#: .\main\templates\base.html:23 .\main\templates\base.html:77
+#: .\main\templates\main\search_results.html:21
+#: .\main\templates\main\tours.html:5
+msgid "Tours"
+msgstr "Շրջայցեր"
+
+#: .\main\templates\base.html:24 .\main\templates\main\tour_detail.html:14
+msgid "Gallery"
+msgstr "Նկարներ"
+
+#: .\main\templates\base.html:25 .\main\templates\base.html:67
+#: .\main\templates\main\about.html:4
+msgid "About Us"
+msgstr "Մեր մասին"
+
+#: .\main\templates\base.html:26 .\main\templates\base.html:78
+msgid "Contact"
+msgstr "Կապ"
+
+#: .\main\templates\base.html:27
+msgid "Login"
+msgstr "Մուտք"
+
+#: .\main\templates\base.html:32 .\main\templates\main\search_results.html:15
+msgid "Search..."
+msgstr "Որոնել..."
+
+#: .\main\templates\base.html:32 .\main\templates\base.html:33
+#: .\main\templates\main\search_results.html:16
+msgid "Search"
+msgstr "Որոնել"
+
+#: .\main\templates\base.html:42
+msgid "Selected Language"
+msgstr "Ընտրված լեզու"
+
+#: .\main\templates\base.html:52
+msgid "Russian"
+msgstr "Ռուսերեն"
+
+#: .\main\templates\base.html:68
+msgid ""
+"We are a premier tour company offering unforgettable travel experiences. "
+"Explore the world with our expertly crafted tours."
+msgstr ""
+"Մենք առաջատար ճանապարհորդական ընկերություն ենք, որը առաջարկում է անմոռանալի "
+"ճանապարհորդություններ։ Բացահայտեք աշխարհը մեր կազմակերպված շրջայցերով։"
+
+#: .\main\templates\base.html:69 .\main\templates\main\index.html:49
+msgid "Learn More"
+msgstr "Ավելին"
+
+#: .\main\templates\base.html:74
+msgid "Quick Links"
+msgstr "Արագ հղումներ"
+
+#: .\main\templates\base.html:84 .\main\templates\main\about.html:39
+#: .\main\templates\main\contact.html:3 .\main\templates\main\contact.html:6
+msgid "Contact Us"
+msgstr "Կապ մեզ հետ"
+
+#: .\main\templates\base.html:85
+msgid "Address:"
+msgstr "Հասցե:"
+
+#: .\main\templates\base.html:86
+msgid "Phone:"
+msgstr "Հեռախոսահամար:"
+
+#: .\main\templates\base.html:87 .\main\templates\main\book_tour.html:32
+#: .\main\templates\main\contact.html:13 .\main\templates\main\index.html:130
+msgid "Email:"
+msgstr "Էլեկտրոնային փոստ:"
+
+#: .\main\templates\main\about.html:9
+msgid "Discover Our Tour Company"
+msgstr "Բացահայտեք մեր ճանապարհորդական ընկերությանը"
+
+#: .\main\templates\main\about.html:10
+msgid ""
+"Welcome to our world of travel and exploration! We are passionate about "
+"offering unparalleled experiences that showcase the beauty and culture of "
+"Armenia."
+msgstr ""
+"Բարի գալուստ մեր ճանապարհորդական ու բացահայտման աշխարհը: Մենք  առաջարկում "
+"ենք անզուգական շրջայցեր, որոնք ցույց են տալիս Հայաստանի գեղեցկությունն ու "
+"մշակույթը։"
+
+#: .\main\templates\main\about.html:12
+msgid "Our Mission"
+msgstr "Մեր առաքելությունը"
+
+#: .\main\templates\main\about.html:15
+msgid "Why Choose Us?"
+msgstr "Ինչու ընտրել մեզ"
+
+#: .\main\templates\main\about.html:17
+msgid "Expert Guides:"
+msgstr "Մասնագետ ուղեկցողներ՝"
+
+#: .\main\templates\main\about.html:18
+msgid "Personalized Itineraries:"
+msgstr "Անհատականացված ծրագրեր՝"
+
+#: .\main\templates\main\about.html:19
+msgid "Authentic Experiences:"
+msgstr "Փորձեր՝"
+
+#: .\main\templates\main\about.html:22
+msgid "Our Story"
+msgstr "Մեր պատմությունը"
+
+#: .\main\templates\main\about.html:25
+msgid "Why Choose Armenia?"
+msgstr "Ինչու ընտրել Հայաստանը"
+
+#: .\main\templates\main\about.html:29
+msgid "Learn About Armenia's Rich History"
+msgstr "Սովորեք Հայաստանի հարուստ պատմությունը"
+
+#: .\main\templates\main\about.html:30
+msgid "Explore Stunning Landscapes"
+msgstr "Բացահայտեք զարմանալի բնապատկերները"
+
+#: .\main\templates\main\about.html:31
+msgid "Discover Armenian Culture"
+msgstr "Բացահայտեք հայկական մշակույթը"
+
+#: .\main\templates\main\about.html:32
+msgid "Find Hidden Gems"
+msgstr "Որոնեք թաքնված գանձերը"
+
+#: .\main\templates\main\about.html:33
+msgid "Experience Warm Hospitality"
+msgstr "Ջերմ հյուրասիրություն"
+
+#: .\main\templates\main\about.html:36
+msgid "Explore Armenia"
+msgstr "Բացահայտեք Հայաստանը"
+
+#: .\main\templates\main\about.html:37
+msgid ""
+"Get a glimpse of the beautiful landscapes and vibrant cities of Armenia."
+msgstr " Բացահայտեք Հայաստանի գեղեցիկ բնապատկերներն և կենդանի քաղաքները։"
+
+#: .\main\templates\main\all_galleries.html:5
+#: .\main\templates\main\all_galleries.html:8
+msgid "All Galleries"
+msgstr "Բոլոր նկարները"
+
+#: .\main\templates\main\all_galleries.html:17
+#: .\main\templates\main\gallery.html:14
+#: .\main\templates\main\tour_detail.html:18
+msgid "Gallery Image"
+msgstr "Նկար"
+
+#: .\main\templates\main\all_galleries.html:22
+#: .\main\templates\main\gallery.html:21
+msgid "No images available for this tour."
+msgstr "Այս շրջայցի համար պատկերներ չեն առկա։"
+
+#: .\main\templates\main\all_galleries.html:26
+msgid "No galleries available."
+msgstr "Նկարներ չկան։"
+
+#: .\main\templates\main\book_tour.html:5
+#: .\main\templates\main\book_tour.html:8 .\main\templates\main\index.html:110
+msgid "Book a Tour"
+msgstr "Պատվիրեք տուր"
+
+#: .\main\templates\main\book_tour.html:12 .\main\templates\main\index.html:114
+msgid "Select Tour:"
+msgstr "Ընտրեք շրջայցը:"
+
+#: .\main\templates\main\book_tour.html:17 .\main\templates\main\index.html:118
+msgid "Select Start Date:"
+msgstr "Սկիզբ:"
+
+#: .\main\templates\main\book_tour.html:22 .\main\templates\main\index.html:122
+msgid "Select End Date:"
+msgstr "Ավարտ:"
+
+#: .\main\templates\main\book_tour.html:27
+#: .\main\templates\main\contact.html:10 .\main\templates\main\index.html:126
+msgid "Name:"
+msgstr "Անուն:"
+
+#: .\main\templates\main\book_tour.html:36 .\main\templates\main\index.html:133
+msgid "Book"
+msgstr "Գրանցել"
+
+#: .\main\templates\main\contact.html:7
+msgid "If you have any questions, feel free to reach out!"
+msgstr "Հարցերի դեպքում կապվեք մեզ հետ:"
+
+#: .\main\templates\main\contact.html:16
+msgid "Message:"
+msgstr "Հաղորդագրություն:"
+
+#: .\main\templates\main\contact.html:19
+msgid "Send"
+msgstr "Ուղարկել"
+
+#: .\main\templates\main\contact.html:22
+msgid "Our Location"
+msgstr "Մեր գտնվելու վայրը"
+
+#: .\main\templates\main\gallery.html:5
+msgid "Gallery - "
+msgstr "Նկարներ - "
+
+#: .\main\templates\main\gallery.html:8
+msgid "Gallery for"
+msgstr "Նկարներ՝"
+
+#: .\main\templates\main\gallery.html:17
+msgid "No image available"
+msgstr "Առկա չէ"
+
+#: .\main\templates\main\index.html:5
+msgid "Welcome to Our Tour Site"
+msgstr "Բարի գալուստ մեր շրջայցերի կայք"
+
+#: .\main\templates\main\index.html:14 .\main\templates\main\index.html:77
+#: .\main\templates\main\index.html:95
+msgid "Your browser does not support the video tag."
+msgstr "Ձեր բրաուզերը չի աջակցում տեսանյութի նշանին։"
+
+#: .\main\templates\main\index.html:21 .\main\templates\main\index.html:84
+msgid "No featured video available."
+msgstr "Առաջարկվող տեսանյութ չկա։"
+
+#: .\main\templates\main\index.html:46
+msgid "Price:"
+msgstr "Գին:"
+
+#: .\main\templates\main\index.html:57
+msgid "Tour Details"
+msgstr "Շրջայցի մանրամասները"
+
+#: .\main\templates\main\index.html:61
+msgid "Duration:"
+msgstr "Տևողություն:"
+
+#: .\main\templates\main\index.html:62
+msgid "Location:"
+msgstr "Գտնվելու վայրը:"
+
+#: .\main\templates\main\index.html:63
+msgid "View on Map"
+msgstr "Դիտել քարտեզում"
+
+#: .\main\templates\main\index.html:103
+msgid "No videos available."
+msgstr "Տեսանյութեր առկա չեն։"
+
+#: .\main\templates\main\index.html:154
+msgid "All Tours"
+msgstr "Բոլոր շրջայցերը"
+
+#: .\main\templates\main\index.html:160
+msgid "USD"
+msgstr "ԱՄՆ դոլար"
+
+#: .\main\templates\main\index.html:182
+msgid "Selected date is not available. Please choose a different date."
+msgstr "Ընտրված ամսաթիվը զբաղված է։ Խնդրում ենք ընտրել այլ ամսաթիվ։"
+
+#: .\main\templates\main\login.html:9
+msgid "Login Page"
+msgstr "Մուտք"
+
+#: .\main\templates\main\login.html:24
+msgid "Welcome!"
+msgstr "Բարի գալուստ!"
+
+#: .\main\templates\main\login.html:28
+msgid "Back to Home"
+msgstr ""
+
+#: .\main\templates\main\login.html:33 .\main\templates\main\register.html:46
+msgid "Google logo"
+msgstr "Google"
+
+#: .\main\templates\main\login.html:33 .\main\templates\main\register.html:46
+msgid "Sign up with Google"
+msgstr "Գրանցվեք Google-ով"
+
+#: .\main\templates\main\login.html:37
+msgid "or use your username"
+msgstr "կամ օգտագործեք ձեր օգտահաշիվը"
+
+#: .\main\templates\main\login.html:40
+msgid "Username"
+msgstr "Օգտանուն"
+
+#: .\main\templates\main\login.html:41
+msgid "Password"
+msgstr "Գաղտնաբառ"
+
+#: .\main\templates\main\login.html:44
+msgid "New User?"
+msgstr "Նոր օգտատեր"
+
+#: .\main\templates\main\login.html:44
+msgid "Signup"
+msgstr "Գրանցվել"
+
+#: .\main\templates\main\login.html:54
+msgid "Submit"
+msgstr "Ուղարկել"
+
+#: .\main\templates\main\register.html:10
+#: .\main\templates\main\register.html:22
+#: .\main\templates\main\register.html:41
+msgid "Register"
+msgstr "Գրանցվել"
+
+#: .\main\templates\main\register.html:43
+msgid "or sign up with Google"
+msgstr "կամ գրանցվեք Google-ով"
+
+#: .\main\templates\main\register.html:50
+msgid "You are signed in as"
+msgstr "Դուք մուտք եք գործել որպես"
+
+#: .\main\templates\main\register.html:51
+msgid "Log Out"
+msgstr "Ելք"
+
+#: .\main\templates\main\search_results.html:6
+msgid "Search Results"
+msgstr "Որոնման արդյունքները"
+
+#: .\main\templates\main\search_results.html:11
+msgid "Search Results for"
+msgstr "Որոնման արդյունքներ՝"
+
+#: .\main\templates\main\search_results.html:29
+msgid "No tours found."
+msgstr "Շրջայցեր չեն գտնվել։"
+
+#: .\main\templates\main\search_results.html:34
+msgid "Contacts"
+msgstr "Կապեր"
+
+#: .\main\templates\main\search_results.html:42
+msgid "No contacts found."
+msgstr "Կապեր չեն գտնվել։"
+
+#: .\main\templates\main\search_results.html:47
+msgid "Bookings"
+msgstr "Պատվերներ"
+
+#: .\main\templates\main\search_results.html:56
+msgid "Tour not assigned"
+msgstr "Շրջայցը չի նշանակվել"
+
+#: .\main\templates\main\search_results.html:62
+msgid "No bookings found."
+msgstr "Գրանցումներ չեն գտնվել։"
+
+#: .\main\templates\main\tour_detail.html:11
+#: .\main\templates\main\tours.html:32
+msgid "Price"
+msgstr "Գին"
+
+#: .\main\templates\main\tour_detail.html:12
+#: .\main\templates\main\tours.html:33
+msgid "Duration"
+msgstr "Տևողություն"
+
+#: .\main\templates\main\tour_detail.html:26
+msgid "View Gallery"
+msgstr "Դիտել նկարները"
+
+#: .\main\templates\main\tour_detail.html:28
+msgid "Reviews"
+msgstr "Մեկնաբանություններ"
+
+#: .\main\templates\main\tour_detail.html:34
+msgid "Rating"
+msgstr "Գնահատում"
+
+#: .\main\templates\main\tours.html:21
+msgid "Discover Our Exclusive Tours"
+msgstr "Բացահայտեք մեր բացառիկ շրջայցերը"
+
+#: .\main\templates\main\tours.html:35
+msgid "Explore More"
+msgstr "Բացահայտեք ավելին"
+
+#: .\main\templates\main\tours.html:39
+msgid "Currently, there are no tours available. Please check back later!"
+msgstr "Այս պահին շրջայցեր առկա չեն։ Խնդրում ենք ստուգել հետո"
+
+#~ msgid "Start Time:"
+#~ msgstr "Սկիզբ:"
+
+#~ msgid "End Time:"
+#~ msgstr "Ավարտ:"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgid "Caption"
+#~ msgstr "Տևողություն"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Name"
+#~ msgstr "Անուն:"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgid "Description"
+#~ msgstr "Տևողություն"
+
+#, fuzzy
+#~| msgid "Gallery Image"
+#~ msgid "Hero Image"
+#~ msgstr "Նկար"
+
+#, fuzzy
+#~| msgid "Start Time:"
+#~ msgid "Start Time"
+#~ msgstr "Սկիզբ:"
+
+#, fuzzy
+#~| msgid "End Time:"
+#~ msgid "End Time"
+#~ msgstr "Ավարտ:"
+
+#, fuzzy
+#~| msgid "Location:"
+#~ msgid "Location"
+#~ msgstr "Գտնվելու վայրը:"
+
+#, fuzzy
+#~| msgid "Tours"
+#~ msgid "Tour"
+#~ msgstr "Շրջայցեր"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgid "Email"
+#~ msgstr "Էլեկտրոնային փոստ:"
+
+#, fuzzy
+#~| msgid "Message:"
+#~ msgid "Message"
+#~ msgstr "Հաղորդագրություն:"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "No Name"
+#~ msgstr "Անուն:"
+
+#, fuzzy
+#~| msgid "Select Start Date:"
+#~ msgid "Start Date"
+#~ msgstr "Սկիզբ:"
+
+#, fuzzy
+#~| msgid "Select End Date:"
+#~ msgid "End Date"
+#~ msgstr "Ավարտ:"
+
+#, fuzzy
+#~| msgid "Our Mission"
+#~ msgid "Mission"
+#~ msgstr "Մեր առաքելությունը"
+
+#, fuzzy
+#~| msgid "Expert Guides:"
+#~ msgid "Expert Guides"
+#~ msgstr "Մասնագետ ուղեկցողներ՝"
+
+#, fuzzy
+#~| msgid "Personalized Itineraries:"
+#~ msgid "Personalized Itineraries"
+#~ msgstr "Անհատականացված ծրագրեր՝"
+
+#, fuzzy
+#~| msgid "Authentic Experiences:"
+#~ msgid "Authentic Experiences"
+#~ msgstr "Փորձեր՝"
+
+#, fuzzy
+#~| msgid "Why Choose Armenia?"
+#~ msgid "Why Choose Armenia"
+#~ msgstr "Ինչու ընտրել Հայաստանը"

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Book a Tour" %}{% endblock %}
+
+{% block content %}
+<h2>{% trans "Book a Tour" %}</h2>
+<form method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="tour">{% trans "Select Tour:" %}</label>
+        {{ form.tour }}
+    </div>
+
+    <div class="form-group">
+        <label for="start_date">{% trans "Select Start Date:" %}</label>
+        <input type="date" id="start_date" name="start_date" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="end_date">{% trans "Select End Date:" %}</label>
+        <input type="date" id="end_date" name="end_date" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="customer_name">{% trans "Name:" %}</label>
+        {{ form.customer_name }}
+    </div>
+
+    <div class="form-group">
+        <label for="customer_email">{% trans "Email:" %}</label>
+        {{ form.customer_email }}
+    </div>
+
+    <button type="submit" class="btn btn-primary">{% trans "Book" %}</button>
+</form>
+
+{% if form.non_field_errors %}
+    <div class="error">{{ form.non_field_errors }}</div>
+{% endif %}
+{% endblock %}

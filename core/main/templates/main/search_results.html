@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Search Results" %}{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/search.css' %}">
+
+<h1 class="search-heading">{% trans "Search Results for" %} "{{ query }}"</h1>
+
+<form method="get" action="{% url 'search' %}" class="search-form">
+    <input type="text" name="query" value="{{ query }}" placeholder="{% trans 'Search...' %}" class="search-input">
+    <button type="submit" class="search-button">{% trans "Search" %}</button>
+</form>
+
+<div class="results-container">
+    <div class="results-section">
+        <h2>{% trans "Tours" %}</h2>
+        {% if tours %}
+            <ul class="results-list">
+                {% for tour in tours %}
+                    <li><a href="{% url 'tour_detail' tour.id %}" class="result-link">{{ tour.name }} - {{ tour.description|truncatewords:10 }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>{% trans "No tours found." %}</p>
+        {% endif %}
+    </div>
+
+    <div class="results-section">
+        <h2>{% trans "Contacts" %}</h2>
+        {% if contacts %}
+            <ul class="results-list">
+                {% for contact in contacts %}
+                    <li class="contact-item">{{ contact.name }}: {{ contact.message|truncatewords:10 }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>{% trans "No contacts found." %}</p>
+        {% endif %}
+    </div>
+
+    <div class="results-section">
+        <h2>{% trans "Bookings" %}</h2>
+        {% if bookings %}
+            <ul class="results-list">
+                {% for booking in bookings %}
+                    <li class="booking-item">
+                        {{ booking.customer_name }} - {{ booking.customer_email }} - 
+                        {% if booking.tour %}
+                            {{ booking.tour.name }}
+                        {% else %}
+                            {% trans "Tour not assigned" %}
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>{% trans "No bookings found." %}</p>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

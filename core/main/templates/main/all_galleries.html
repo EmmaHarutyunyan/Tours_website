@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "All Galleries" %}{% endblock %}
+
+{% block content %}
+<h1>{% trans "All Galleries" %}</h1>
+<div class="gallery-list">
+    {% if tours_dict %}
+        {% for tour, images in tours_dict.items %}
+            <h2>{{ tour.name }}</h2>
+            {% if images %}
+                <div class="gallery-images">
+                    {% for image in images %}
+                        <div class="gallery-item">
+                            <img src="{{ image.url }}" alt="{% trans 'Gallery Image' %}">
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p>{% trans "No images available for this tour." %}</p>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <p>{% trans "No galleries available." %}</p>
+    {% endif %}
+</div>
+{% endblock %}

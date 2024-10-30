@@ -1,0 +1,532 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-10 15:27+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\core\settings.py:210 .\main\templates\base.html:49
+msgid "Armenian"
+msgstr "Armenian"
+
+#: .\core\settings.py:211
+msgid "Russia"
+msgstr "Russia"
+
+#: .\core\settings.py:212 .\main\templates\base.html:46
+msgid "English"
+msgstr "English"
+
+#: .\main\templates\base.html:15
+msgid "Tour Site"
+msgstr "Tour Site"
+
+#: .\main\templates\base.html:22 .\main\templates\base.html:76
+msgid "Home"
+msgstr "Home"
+
+#: .\main\templates\base.html:23 .\main\templates\base.html:77
+#: .\main\templates\main\search_results.html:21
+#: .\main\templates\main\tours.html:5
+msgid "Tours"
+msgstr "Tours"
+
+#: .\main\templates\base.html:24 .\main\templates\main\tour_detail.html:14
+msgid "Gallery"
+msgstr "Gallery"
+
+#: .\main\templates\base.html:25 .\main\templates\base.html:67
+#: .\main\templates\main\about.html:4
+msgid "About Us"
+msgstr "About Us"
+
+#: .\main\templates\base.html:26 .\main\templates\base.html:78
+msgid "Contact"
+msgstr "Contact"
+
+#: .\main\templates\base.html:27
+msgid "Login"
+msgstr "Login"
+
+#: .\main\templates\base.html:32 .\main\templates\main\search_results.html:15
+msgid "Search..."
+msgstr "Search..."
+
+#: .\main\templates\base.html:32 .\main\templates\base.html:33
+#: .\main\templates\main\search_results.html:16
+msgid "Search"
+msgstr "Search"
+
+#: .\main\templates\base.html:42
+msgid "Selected Language"
+msgstr "Selected Language"
+
+#: .\main\templates\base.html:52
+msgid "Russian"
+msgstr "Russian"
+
+#: .\main\templates\base.html:68
+msgid ""
+"We are a premier tour company offering unforgettable travel experiences. "
+"Explore the world with our expertly crafted tours."
+msgstr ""
+"We are a premier tour company offering unforgettable travel experiences. "
+"Explore the world with our expertly crafted tours."
+
+#: .\main\templates\base.html:69 .\main\templates\main\index.html:49
+msgid "Learn More"
+msgstr "Learn More"
+
+#: .\main\templates\base.html:74
+msgid "Quick Links"
+msgstr "Quick Links"
+
+#: .\main\templates\base.html:84 .\main\templates\main\about.html:39
+#: .\main\templates\main\contact.html:3 .\main\templates\main\contact.html:6
+msgid "Contact Us"
+msgstr "Contact Us"
+
+#: .\main\templates\base.html:85
+msgid "Address:"
+msgstr "Address:"
+
+#: .\main\templates\base.html:86
+msgid "Phone:"
+msgstr "Phone:"
+
+#: .\main\templates\base.html:87 .\main\templates\main\book_tour.html:32
+#: .\main\templates\main\contact.html:13 .\main\templates\main\index.html:130
+msgid "Email:"
+msgstr "Email:"
+
+#: .\main\templates\main\about.html:9
+msgid "Discover Our Tour Company"
+msgstr "Discover Our Tour Company"
+
+#: .\main\templates\main\about.html:10
+msgid ""
+"Welcome to our world of travel and exploration! We are passionate about "
+"offering unparalleled experiences that showcase the beauty and culture of "
+"Armenia."
+msgstr ""
+"Welcome to our world of travel and exploration! We are passionate about "
+"offering unparalleled experiences that showcase the beauty and culture of "
+"Armenia."
+
+#: .\main\templates\main\about.html:12
+msgid "Our Mission"
+msgstr "Our Mission"
+
+#: .\main\templates\main\about.html:15
+msgid "Why Choose Us?"
+msgstr "Why Choose Us?"
+
+#: .\main\templates\main\about.html:17
+msgid "Expert Guides:"
+msgstr "Expert Guides:"
+
+#: .\main\templates\main\about.html:18
+msgid "Personalized Itineraries:"
+msgstr "Personalized Itineraries:"
+
+#: .\main\templates\main\about.html:19
+msgid "Authentic Experiences:"
+msgstr "Authentic Experiences:"
+
+#: .\main\templates\main\about.html:22
+msgid "Our Story"
+msgstr "Our Story"
+
+#: .\main\templates\main\about.html:25
+msgid "Why Choose Armenia?"
+msgstr "Why Choose Armenia?"
+
+#: .\main\templates\main\about.html:29
+msgid "Learn About Armenia's Rich History"
+msgstr "Learn About Armenia's Rich History"
+
+#: .\main\templates\main\about.html:30
+msgid "Explore Stunning Landscapes"
+msgstr "Explore Stunning Landscapes"
+
+#: .\main\templates\main\about.html:31
+msgid "Discover Armenian Culture"
+msgstr "Discover Armenian Culture"
+
+#: .\main\templates\main\about.html:32
+msgid "Find Hidden Gems"
+msgstr "Find Hidden Gems"
+
+#: .\main\templates\main\about.html:33
+msgid "Experience Warm Hospitality"
+msgstr "Experience Warm Hospitality"
+
+#: .\main\templates\main\about.html:36
+msgid "Explore Armenia"
+msgstr "Explore Armenia"
+
+#: .\main\templates\main\about.html:37
+msgid ""
+"Get a glimpse of the beautiful landscapes and vibrant cities of Armenia."
+msgstr ""
+"Get a glimpse of the beautiful landscapes and vibrant cities of Armenia."
+
+#: .\main\templates\main\all_galleries.html:5
+#: .\main\templates\main\all_galleries.html:8
+msgid "All Galleries"
+msgstr "All Galleries"
+
+#: .\main\templates\main\all_galleries.html:17
+#: .\main\templates\main\gallery.html:14
+#: .\main\templates\main\tour_detail.html:18
+msgid "Gallery Image"
+msgstr "Gallery Image"
+
+#: .\main\templates\main\all_galleries.html:22
+#: .\main\templates\main\gallery.html:21
+msgid "No images available for this tour."
+msgstr "No images available for this tour."
+
+#: .\main\templates\main\all_galleries.html:26
+msgid "No galleries available."
+msgstr "No galleries available."
+
+#: .\main\templates\main\book_tour.html:5
+#: .\main\templates\main\book_tour.html:8 .\main\templates\main\index.html:110
+msgid "Book a Tour"
+msgstr "Book a Tour"
+
+#: .\main\templates\main\book_tour.html:12 .\main\templates\main\index.html:114
+msgid "Select Tour:"
+msgstr "Select Tour:"
+
+#: .\main\templates\main\book_tour.html:17 .\main\templates\main\index.html:118
+msgid "Select Start Date:"
+msgstr "Select Start Date:"
+
+#: .\main\templates\main\book_tour.html:22 .\main\templates\main\index.html:122
+msgid "Select End Date:"
+msgstr "Select End Date:"
+
+#: .\main\templates\main\book_tour.html:27
+#: .\main\templates\main\contact.html:10 .\main\templates\main\index.html:126
+msgid "Name:"
+msgstr "Name:"
+
+#: .\main\templates\main\book_tour.html:36 .\main\templates\main\index.html:133
+msgid "Book"
+msgstr "Book"
+
+#: .\main\templates\main\contact.html:7
+msgid "If you have any questions, feel free to reach out!"
+msgstr "If you have any questions, feel free to reach out!"
+
+#: .\main\templates\main\contact.html:16
+msgid "Message:"
+msgstr "Message:"
+
+#: .\main\templates\main\contact.html:19
+msgid "Send"
+msgstr "Send"
+
+#: .\main\templates\main\contact.html:22
+msgid "Our Location"
+msgstr "Our Location"
+
+#: .\main\templates\main\gallery.html:5
+msgid "Gallery - "
+msgstr "Gallery - "
+
+#: .\main\templates\main\gallery.html:8
+msgid "Gallery for"
+msgstr "Gallery for"
+
+#: .\main\templates\main\gallery.html:17
+msgid "No image available"
+msgstr "No image available"
+
+#: .\main\templates\main\index.html:5
+msgid "Welcome to Our Tour Site"
+msgstr "Welcome to Our Tour Site"
+
+#: .\main\templates\main\index.html:14 .\main\templates\main\index.html:77
+#: .\main\templates\main\index.html:95
+msgid "Your browser does not support the video tag."
+msgstr "Your browser does not support the video tag."
+
+#: .\main\templates\main\index.html:21 .\main\templates\main\index.html:84
+msgid "No featured video available."
+msgstr "No featured video available."
+
+#: .\main\templates\main\index.html:46
+msgid "Price:"
+msgstr "Price:"
+
+#: .\main\templates\main\index.html:57
+msgid "Tour Details"
+msgstr "Tour Details"
+
+#: .\main\templates\main\index.html:61
+msgid "Duration:"
+msgstr "Duration:"
+
+#: .\main\templates\main\index.html:62
+msgid "Location:"
+msgstr "Location:"
+
+#: .\main\templates\main\index.html:63
+msgid "View on Map"
+msgstr "View on Map"
+
+#: .\main\templates\main\index.html:103
+msgid "No videos available."
+msgstr "No videos available."
+
+#: .\main\templates\main\index.html:154
+msgid "All Tours"
+msgstr "All Tours"
+
+#: .\main\templates\main\index.html:160
+msgid "USD"
+msgstr "USD"
+
+#: .\main\templates\main\index.html:182
+msgid "Selected date is not available. Please choose a different date."
+msgstr "Selected date is not available. Please choose a different date."
+
+#: .\main\templates\main\login.html:9
+msgid "Login Page"
+msgstr "Login Page"
+
+#: .\main\templates\main\login.html:24
+msgid "Welcome!"
+msgstr "Welcome!"
+
+#: .\main\templates\main\login.html:28
+msgid "Back to Home"
+msgstr ""
+
+#: .\main\templates\main\login.html:33 .\main\templates\main\register.html:46
+msgid "Google logo"
+msgstr "Google logo"
+
+#: .\main\templates\main\login.html:33 .\main\templates\main\register.html:46
+msgid "Sign up with Google"
+msgstr "Sign up with Google"
+
+#: .\main\templates\main\login.html:37
+msgid "or use your username"
+msgstr "or use your username"
+
+#: .\main\templates\main\login.html:40
+msgid "Username"
+msgstr "Username"
+
+#: .\main\templates\main\login.html:41
+msgid "Password"
+msgstr "Password"
+
+#: .\main\templates\main\login.html:44
+msgid "New User?"
+msgstr "New User?"
+
+#: .\main\templates\main\login.html:44
+msgid "Signup"
+msgstr "Signup"
+
+#: .\main\templates\main\login.html:54
+msgid "Submit"
+msgstr "Submit"
+
+#: .\main\templates\main\register.html:10
+#: .\main\templates\main\register.html:22
+#: .\main\templates\main\register.html:41
+msgid "Register"
+msgstr "Register"
+
+#: .\main\templates\main\register.html:43
+msgid "or sign up with Google"
+msgstr "or sign up with Google"
+
+#: .\main\templates\main\register.html:50
+msgid "You are signed in as"
+msgstr "You are signed in as"
+
+#: .\main\templates\main\register.html:51
+msgid "Log Out"
+msgstr "Log Out"
+
+#: .\main\templates\main\search_results.html:6
+msgid "Search Results"
+msgstr "Search Results"
+
+#: .\main\templates\main\search_results.html:11
+msgid "Search Results for"
+msgstr "Search Results for"
+
+#: .\main\templates\main\search_results.html:29
+msgid "No tours found."
+msgstr "No tours found."
+
+#: .\main\templates\main\search_results.html:34
+msgid "Contacts"
+msgstr "Contacts"
+
+#: .\main\templates\main\search_results.html:42
+msgid "No contacts found."
+msgstr "No contacts found."
+
+#: .\main\templates\main\search_results.html:47
+msgid "Bookings"
+msgstr "Bookings"
+
+#: .\main\templates\main\search_results.html:56
+msgid "Tour not assigned"
+msgstr "Tour not assigned"
+
+#: .\main\templates\main\search_results.html:62
+msgid "No bookings found."
+msgstr "No bookings found."
+
+#: .\main\templates\main\tour_detail.html:11
+#: .\main\templates\main\tours.html:32
+msgid "Price"
+msgstr "Price"
+
+#: .\main\templates\main\tour_detail.html:12
+#: .\main\templates\main\tours.html:33
+msgid "Duration"
+msgstr "Duration"
+
+#: .\main\templates\main\tour_detail.html:26
+msgid "View Gallery"
+msgstr "View Gallery"
+
+#: .\main\templates\main\tour_detail.html:28
+msgid "Reviews"
+msgstr "Reviews"
+
+#: .\main\templates\main\tour_detail.html:34
+msgid "Rating"
+msgstr "Rating"
+
+#: .\main\templates\main\tours.html:21
+msgid "Discover Our Exclusive Tours"
+msgstr "Discover Our Exclusive Tours"
+
+#: .\main\templates\main\tours.html:35
+msgid "Explore More"
+msgstr "Explore More"
+
+#: .\main\templates\main\tours.html:39
+msgid "Currently, there are no tours available. Please check back later!"
+msgstr "Currently, there are no tours available. Please check back later!"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgid "Caption"
+#~ msgstr "Duration"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Name"
+#~ msgstr "Name:"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgid "Description"
+#~ msgstr "Duration"
+
+#, fuzzy
+#~| msgid "Gallery Image"
+#~ msgid "Hero Image"
+#~ msgstr "Gallery Image"
+
+#, fuzzy
+#~| msgid "Start Time:"
+#~ msgid "Start Time"
+#~ msgstr "Start Time:"
+
+#, fuzzy
+#~| msgid "End Time:"
+#~ msgid "End Time"
+#~ msgstr "End Time:"
+
+#, fuzzy
+#~| msgid "Location:"
+#~ msgid "Location"
+#~ msgstr "Location:"
+
+#, fuzzy
+#~| msgid "Tours"
+#~ msgid "Tour"
+#~ msgstr "Tours"
+
+#, fuzzy
+#~| msgid "Email:"
+#~ msgid "Email"
+#~ msgstr "Email:"
+
+#, fuzzy
+#~| msgid "Message:"
+#~ msgid "Message"
+#~ msgstr "Message:"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "No Name"
+#~ msgstr "Name:"
+
+#, fuzzy
+#~| msgid "Select Start Date:"
+#~ msgid "Start Date"
+#~ msgstr "Select Start Date:"
+
+#, fuzzy
+#~| msgid "Select End Date:"
+#~ msgid "End Date"
+#~ msgstr "Select End Date:"
+
+#, fuzzy
+#~| msgid "Our Mission"
+#~ msgid "Mission"
+#~ msgstr "Our Mission"
+
+#, fuzzy
+#~| msgid "Expert Guides:"
+#~ msgid "Expert Guides"
+#~ msgstr "Expert Guides:"
+
+#, fuzzy
+#~| msgid "Personalized Itineraries:"
+#~ msgid "Personalized Itineraries"
+#~ msgstr "Personalized Itineraries:"
+
+#, fuzzy
+#~| msgid "Authentic Experiences:"
+#~ msgid "Authentic Experiences"
+#~ msgstr "Authentic Experiences:"
+
+#, fuzzy
+#~| msgid "Why Choose Armenia?"
+#~ msgid "Why Choose Armenia"
+#~ msgstr "Why Choose Armenia?"
+
+#~ msgid "Start Time:"
+#~ msgstr "Start Time:"
+
+#~ msgid "End Time:"
+#~ msgstr "End Time:"
