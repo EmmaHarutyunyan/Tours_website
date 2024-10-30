@@ -14,7 +14,6 @@ Each page includes a search tool, language translator, and footer links to all s
 
 # Installation
 
-https://github.com/EmmaHarutyunyan/Tours_website.git
 
 1. **Clone this repository:**
 ```bash
