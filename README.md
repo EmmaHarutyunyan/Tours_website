@@ -42,3 +42,10 @@ python manage.py runserver
 **Here are some page videos down**
 ---
 
+https://github.com/user-attachments/assets/878398f5-848d-4f40-bcef-84445098b5b7
+
+https://github.com/user-attachments/assets/c7aed677-4a25-4458-aff5-db09e6d5c8c1
+
+https://github.com/user-attachments/assets/23c5331a-cc8a-429e-902c-0664d54a1390
+
+
