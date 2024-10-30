@@ -16,7 +16,7 @@ This tour site offers an easy-to-use interface to explore, book, and learn about
 
 -Login Page: Login with Google or username and password.
 
--Each page includes a search tool, language translator, and footer links to all site pages.
+Each page includes a search tool, language translator, and footer links to all site pages.
 
 # Installation
 
